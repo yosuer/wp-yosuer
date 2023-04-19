@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@types/woocommerce__woocommerce-rest-api": "^1.0.2",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "sass": "^1.60.0",
