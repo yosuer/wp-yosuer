@@ -1,21 +1,29 @@
-interface HeaderMenuItem {
+interface MenuItem {
   ID: number;
+  children: any[];
+  pageID: number;
+  pageSlug: string;
   title: string;
   url: string;
-  children: any[];
-  pageSlug: string;
-  pageID: number;
 }
 
 export interface Header {
   favicon: string;
-  headerMenuItems: HeaderMenuItem[];
+  headerMenuItems: MenuItem[];
   siteDescription: string;
   siteLogoUrl: string;
   siteTitle: string;
 }
 
+export interface Footer {
+  socialLinks: any[];
+  copyrightText: boolean;
+  sidebarOne: string;
+  sidebarTwo: string;
+  footerMenuItems: MenuItem[];
+}
+
 export interface HeaderAndFooter {
   header: Header;
-  footer: any;
+  footer: Footer;
 }

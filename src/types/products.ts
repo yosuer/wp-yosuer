@@ -2,7 +2,7 @@ enum ProductType {
   VARIABLE = "variable",
 }
 
-interface Image {
+interface ProductImage {
   id: number;
   alt: string;
   name: string;
@@ -31,10 +31,11 @@ interface Category {
 }
 
 export interface Product {
-  id: string;
+  id: number;
   name: string;
   sku: string;
   price: string;
+  regular_price: string;
   description: string;
   short_description: string;
   slug: string;
@@ -47,7 +48,8 @@ export interface Product {
   variations: number[];
   caterogories: Category[];
   attributes: Attribute[];
-  images: Image[];
+  images: ProductImage[];
+  related_ids: number[];
 }
 
 export interface Variation {
@@ -55,7 +57,7 @@ export interface Variation {
   sku: string;
   price: string;
   attributes: VariationAttribute[];
-  image: Image;
+  image: ProductImage;
   stock_quantity: number;
   stock_status: string;
 }

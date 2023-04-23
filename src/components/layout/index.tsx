@@ -12,7 +12,9 @@ const Layout = ({ headerAndFooter, children }: Props) => {
     <>
       <Header header={headerAndFooter.header} />
 
-      <main className="container mx-auto py-4 min-h-50vh">{children}</main>
+      <main className="container py-4 my-0 mx-[10px] md:mx-[40px] min-h-50vh">
+        {children}
+      </main>
 
       <Footer footer={headerAndFooter.footer} />
     </>

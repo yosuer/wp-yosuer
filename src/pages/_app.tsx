@@ -9,7 +9,7 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={inter.className} style={{ margin: "0 40px" }}>
+    <div className={inter.className}>
       <Component {...pageProps} />
     </div>
   );

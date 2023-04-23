@@ -25,11 +25,11 @@ const Header = ({ header }: Props) => {
               <Image src={siteLogoUrl} alt="logo" width={200} height={100} />
             </Link>
           </div>
-          <div className="flex flex-row items-center justify-between basis-1/3 uppercase">
+          {/* <div className="flex flex-row items-center justify-between basis-1/3 uppercase">
             {headerMenuItems.map((itemMenu) => (
               <div key={itemMenu.ID}>{itemMenu.title}</div>
             ))}
-          </div>
+          </div> */}
           <div className="flex flex-row items-center justify-around basis-1/6">
             <div>My account</div>
             <div>CART</div>
